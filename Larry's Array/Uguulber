@@ -1,0 +1,75 @@
+Англи :
+Larry has been given a permutation of a sequence of natural numbers incrementing from 1 as an array. He must determine whether the array can be sorted using the following operation any number of times:
+
+Choose any 3 consecutive indices and rotate their elements in such a way that ABC - BCA - CAB - ABC .
+For example, if : A = {1,6,5,2,4,6}
+
+A		rotate 
+[1,6,5,2,4,3]	[6,5,2]
+[1,5,2,6,4,3]	[5,2,6]
+[1,2,6,5,4,3]	[5,4,3]
+[1,2,6,3,5,4]	[6,3,5]
+[1,2,3,5,6,4]	[5,6,4]
+[1,2,3,4,5,6]
+
+YES
+On a new line for each test case, print YES if A can be fully sorted. Otherwise, print NO.
+
+Function Description
+
+Complete the larrysArray function in the editor below. It must return a string, either YES or NO.
+
+larrysArray has the following parameter(s):
+
+A: an array of integers
+Input Format
+
+The first line contains an integer , the number of test cases.
+
+The next t pairs of lines are as follows:
+
+The first line contains an integer n, the length of A.
+The next line contains n space-separated integers A[n].
+Constraints
+1=< t =< 10
+3=< n =< 1000
+1=< A[i]=< n 
+Asorted =  integers that increment by 1 from 1 to n. 
+
+Монгол :
+Ларрид массив хэлбэрээр 1-ээс нэмэгдэх натурал тоонуудын дарааллыг солихыг өгсөн. Тэрээр дараах үйлдлийг хэд хэдэн удаа ашиглан массивыг эрэмбэлэх боломжтой эсэхийг тодорхойлох ёстой.
+
+Дараалсан 3 индексийг сонгоод тэдгээрийн элементүүдийг ABC - BCA - CAB - ABC байхаар эргүүлнэ.
+Жишээлбэл, хэрэв : A = {1,6,5,2,4,6}
+
+Эргүүлэх 
+[1,6,5,2,4,3] [6,5,2]
+[1,5,2,6,4,3] [5,2,6]
+[1,2,6,5,4,3] [5,4,3]
+[1,2,6,3,5,4] [6,3,5]
+[1,2,3,5,6,4] [5,6,4]
+[1,2,3,4,5,6]
+
+ТИЙМ
+Туршилтын тохиолдол бүрийн шинэ мөрөнд А бүрэн эрэмбэлэх боломжтой бол YES гэж хэвлэ. Үгүй бол NO гэж хэвлэ.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн larrysArray функцийг гүйцээнэ үү. Энэ нь YES эсвэл ҮГҮЙ гэсэн мөрийг буцаах ёстой.
+
+larrysArray нь дараах параметртэй байна:
+
+Х: бүхэл тоонуудын массив
+Оролтын формат
+
+Эхний мөрөнд туршилтын тохиолдлын тоог бүхэл тоо агуулна.
+
+Дараагийн t хос мөр дараах байдалтай байна.
+
+Эхний мөрөнд A урттай n бүхэл тоо байна.
+Дараагийн мөрөнд зайгаар тусгаарлагдсан n бүхэл тоо A[n] байна.
+Хязгаарлалт
+1=< t =< 10
+3=< n =< 1000
+1=< A[i]=< n 
+Төрөлжсөн = 1-ээс n хүртэл 1-ээр нэмэгдэх бүхэл тоо.
