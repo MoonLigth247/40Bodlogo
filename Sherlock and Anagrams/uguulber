@@ -1,1 +1,52 @@
+Англи :
+Two strings are anagrams of each other if the letters of one string can be rearranged to form the other string. Given a string, find the number of pairs of substrings of the string that are anagrams of each other.
 
+Example :
+s = mom
+The list of all anagrammatic pairs is [m,m],[mo,om] at positions [0,2],[0,1],[1,2] respectively.
+
+Function Description
+
+Complete the function sherlockAndAnagrams in the editor below.
+
+sherlockAndAnagrams has the following parameter(s):
+
+string s: a string
+Returns
+
+int: the number of unordered anagrammatic pairs of substrings in 
+Input Format
+
+The first line contains an integer q, the number of queries.
+Each of the next q lines contains a string s to analyze.
+
+Constraints
+1=<q=<10
+2=<length of s=<100
+s contains only lowercase letters in the range ascii[a-z].
+Монгол :
+Нэг мөрийн үсгүүдийг дахин цэгцэлж, нөгөө мөрийг үүсгэх боломжтой бол хоёр мөр нь бие биенийхээ анаграмм юм. Мөр өгөгдсөн бол бие биенийхээ анаграмм болох мөрийн дэд мөрүүдийн хосын тоог ол.
+
+Жишээ :
+s = ээж
+Бүх анаграмматик хосуудын жагсаалт нь [0,2],[0,1],[1,2] байрлалд [m,m],[mo,om] байна.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн sherlockAndAnagrams функцийг гүйцээнэ үү.
+
+sherlockAndAnagrams нь дараах параметртэй байна:
+
+string s: тэмдэгт мөр
+Буцах
+
+int: доторх эрэмблэгдээгүй анаграмматик хос дэд мөрүүдийн тоо 
+Оролтын формат
+
+Эхний мөрөнд асуулгын тоо болох q бүхэл тоо байна.
+Дараагийн q мөр бүрт дүн шинжилгээ хийх s тэмдэгт мөр байна.
+
+Хязгаарлалт
+1=<q=<10
+2=<s-ийн урт=<100
+s нь ascii[a-z] мужид зөвхөн жижиг үсгүүдийг агуулна.
