@@ -1,0 +1,67 @@
+Англи :
+
+We define a magic square to be an n*n matrix of distinct positive integers from 1 to n*n where the sum of any 
+row, column, or diagonal of length  is always equal to the same number: the magic constant.
+
+You will be given a 3x3 matrix s of integers in the inclusive range [1,9]. We can convert any digit   
+to any other digit b in the range [1,9] at cost of |a-b| . Given , convert it into a magic square at minimal cost. Print this cost on a new line.
+
+Note: The resulting magic square must contain distinct integers in the inclusive range [1,9].
+
+Example
+
+$s = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
+
+The matrix looks like this:
+
+5 3 4
+1 5 8
+6 4 2
+We can convert it to the following magic square:
+
+8 3 4
+1 5 9
+6 7 2
+This took three replacements at a cost of .
+
+Function Description
+
+Complete the formingMagicSquare function in the editor below.
+
+formingMagicSquare has the following parameter(s):
+
+int s[3][3]: a 3x3 array of integers
+
+Монгол :
+
+Бид шидэт квадратыг 1-ээс n*n хүртэлх тодорхой эерэг бүхэл тоонуудын n*n матриц гэж тодорхойлдог. 
+мөр, багана эсвэл диагональ урт нь үргэлж ижил тоотой тэнцүү байна: шидэт тогтмол.
+
+Танд [1,9] багтаасан бүхэл тоонуудын 3х3 матриц өгөгдөнө. Бид ямар ч цифрийг хөрвүүлэх боломжтой   
+[1,9] муж дахь өөр дурын b орон руу |a-b| үнээр . Өгөгдсөн бол үүнийг хамгийн бага зардлаар шидэт квадрат болгон хувирга. Энэ зардлыг шинэ мөрөнд хэвлэ.
+
+Тайлбар: Үүссэн шидэт квадрат нь багтаасан мужид тодорхой бүхэл тоо агуулсан байх ёстой [1,9].
+
+Жишээ
+
+$s = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
+
+Матриц дараах байдлаар харагдаж байна.
+
+5 3 4
+1 5 8
+6 4 2
+Бид үүнийг дараах шидэт квадрат болгон хувиргаж болно.
+
+8 3 4
+1 5 9
+6 7 2
+Гурван удаа солих шаардлагатай болсон |5-8|+|8-9|+|4-7|=7.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн MagicSquare үүсгэх функцийг гүйцээнэ үү.
+
+formingMagicSquare нь дараах параметртэй байна:
+
+int s[3][3]: 3x3 бүхэл тоон массив
