@@ -1,1 +1,42 @@
+Англи : 
 
+The factorial of the integer , written , is defined as:
+
+n! = n*(n-1)*(n-2)*...*3*2*1
+
+Calculate and print the factorial of a given integer.
+
+For example, if n = 30 , 30*29*28*27*...*3*2*1 we calculate  and get 265252859812191058636308480000000.
+
+Function Description
+
+Complete the extraLongFactorials function in the editor below. It should print the result and return.
+
+extraLongFactorials has the following parameter(s):
+
+n: an integer
+Note: Factorials of 20 > n  can't be stored even in a  64 - bit long long variable. Big integers must be used for such calculations. Languages like Java, Python, Ruby etc. can handle big integers, but we need to write additional code in C/C++ to handle huge values.
+
+We recommend solving this challenge using BigIntegers.
+
+Монгол :
+
+Бүхэл тоон факториалыг ингэж тооцоолон .
+
+n! = n*(n-1)*(n-2)*...*3*2*1
+
+Өгөгдсөн тооны факториалыг тооцоолж хэвлэн.
+
+Жишээлвэл, хэрвээ n = 30  байвал 30*29*28*27*...*3*2*1 тооцоолж энэ тоог гарган авна 265252859812191058636308480000000.
+
+Функцийн тодорхойлолт 
+
+Доорх засварлагчийн extraLongFactorials функцийг гүйцээнэ үү. Энэ нь үр дүнг хэвлээд буцаах ёстой.
+
+extraLongFactoryals нь дараах параметртэй:
+
+n: бүхэл тоо
+
+Тайлбар: 20 > n факториал нь 64 битийн урт хувьсагчид ч хадгалах боломжгүй. 
+Ийм тооцоололд том бүхэл тоо ашиглах ёстой. Java, Python, Ruby гэх мэт хэлүүд том бүхэл 
+тоонуудтай ажиллах боломжтой боловч бид асар их утгыг боловсруулахын тулд C/C++ хэл дээр нэмэлт код бичих хэрэгтэй.
