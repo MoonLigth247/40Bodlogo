@@ -1,0 +1,73 @@
+Англи :
+
+David has several containers, each with a number of balls in it. 
+He has just enough containers to sort each type of ball he has into its own container. 
+David wants to sort the balls using his sort method.
+
+David wants to perform some number of swap operations such that:
+
+Each container contains only balls of the same type.
+No two balls of the same type are located in different containers.
+
+Example
+
+containers =[[1,4],[2,3]]
+
+David has n=2 containers and 2 different types of balls, both of which are numbered from 0 to n-1=1. 
+The distribution of ball types per container are shown in the following diagram.
+
+In a single operation, David can swap two balls located in different containers.
+
+The diagram below depicts a single swap operation:
+
+In this case, there is no way to have all green balls in one container and 
+all red in the other using only swap operations. Return Impossible.
+
+You must perform q queries where each query is in the form of a matrix, M. 
+For each query, print Possible on a new line if David can satisfy the conditions above for the given matrix. 
+Otherwise, print Impossible.
+
+Function Description
+
+Complete the organizingContainers function in the editor below.
+
+organizingContainers has the following parameter(s):
+
+int containter[n][m]: a two dimensional array of integers that represent the number of balls of each color in each container.
+
+Монгол :
+
+Дэвид хэд хэдэн савтай бөгөөд дотор нь хэд хэдэн бөмбөг байдаг. 
+Түүнд өөрт байгаа бөмбөгний төрөл бүрийг өөрийн саванд ангилах хангалттай сав бий. 
+Дэвид өөрийн ангилах аргыг ашиглан бөмбөгийг ангилахыг хүсч байна.
+
+Дэвид хэд хэдэн солих үйлдлийг гүйцэтгэхийг хүсч байна, тухайлбал:
+
+Сав бүр нь зөвхөн ижил төрлийн бөмбөг агуулдаг.
+Нэг төрлийн хоёр бөмбөг өөр өөр саванд байрладаггүй.
+
+Жишээ
+
+сав =[[1,4],[2,3]]
+
+Дэвид n=2 сав, 2 өөр төрлийн бөмбөгтэй бөгөөд хоёулаа 0-ээс n-1=1 хүртэл дугаарлагдсан. 
+Нэг саванд ногдох бөмбөгний төрлүүдийн тархалтыг дараах диаграммд үзүүлэв.
+
+Нэг удаагийн үйлдлээр Дэвид өөр өөр саванд байрлах хоёр бөмбөгийг сольж чаддаг.
+
+Доорх диаграмм нь нэг солих үйлдлийг дүрсэлсэн болно.
+
+Энэ тохиолдолд бүх ногоон бөмбөгийг нэг саванд хийх боломжгүй юм 
+бусад нь зөвхөн своп үйлдлүүдийг ашиглан бүх улаан. Буцах боломжгүй.
+
+Асуулга бүр нь M матриц хэлбэртэй байгаа тохиолдолд та q асуулга хийх ёстой. 
+Хэрэв Дэвид өгөгдсөн матрицын дээрх нөхцлийг хангаж чадвал асуулга бүрийн хувьд Боломжтой гэснийг шинэ мөрөнд хэвлэнэ үү. 
+Үгүй бол боломжгүй гэж хэвлэ.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн Containers зохион байгуулах функцийг гүйцээнэ үү.
+
+OrganizingContainers нь дараах параметртэй байна:
+
+int containter[n][m]: сав тус бүрийн өнгө бүрийн бөмбөгний тоог илэрхийлэх бүхэл тоонуудын хоёр хэмжээст массив.
