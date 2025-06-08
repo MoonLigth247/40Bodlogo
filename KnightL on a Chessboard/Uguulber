@@ -1,0 +1,52 @@
+Англи :
+KnightL is a chess piece that moves in an L shape. We define the possible moves of KnightL(a,b) 
+as any movement from some position (x1,y1) to some (x2,y2) satisfying either of the following :
+
+x2 = x1 +- a and y2 = y1 +- b, or
+x2 = x1 +- b and y2 = y1 +-a
+
+Note that (a,b) and (b,a) allow for the same exact set of movements. For example, the diagram below 
+depicts the possible locations that KnightL(1,2) or KnightL(2,1) can move to from its 
+current location at the center of a 5x5 chessboard:
+
+Observe that for each possible movement, the Knight moves 2 units in one direction
+(i.e., horizontal or vertical) and 1 unit in the perpendicular direction.
+
+Given the value of n for an nxn chessboard, answer the following question for each (a,b) pair where 1=<a,b=<n:
+
+What is the minimum number of moves it takes for KnightL(a,b) to get from position (0,0) to position 
+(n-1,n-1)? If it's not possible for the Knight to reach that destination, the answer is -1 instead.
+Then print the answer for each KnightL(a,b) according to the Output Format specified below.
+
+Input Format
+
+A single integer denoting .
+
+Constraints
+5=<n=<25
+Монгол :
+KnightL бол L хэлбэрээр хөдөлдөг шатрын тоглоом юм. Бид KnightL(a,b)-ийн боломжит нүүдлийг тодорхойлдог. 
+Дараахь зүйлсийн аль нэгийг хангасан зарим байрлалаас (x1,y1) зарим (x2,y2) руу шилжих хөдөлгөөн.
+
+x2 = x1 +- a ба y2 = y1 +- b, эсвэл
+x2 = x1 +- b ба y2 = y1 +-a
+
+(a,b) ба (b,a) нь яг ижил хөдөлгөөн хийх боломжийг олгодог гэдгийг анхаарна уу. Жишээлбэл, доорх диаграмм 
+KnightL(1,2) эсвэл KnightL(2,1)-ийн шилжиж болох боломжит байршлыг дүрсэлдэг. 
+5х5 хэмжээтэй шатрын самбарын төвд байгаа одоогийн байршил:
+
+Боломжит хөдөлгөөн бүрийн хувьд Найт нэг чиглэлд 2 нэгж хөдөлж байгааг ажиглаарай
+(өөрөөр хэлбэл, хэвтээ эсвэл босоо) ба перпендикуляр чиглэлд 1 нэгж байна.
+
+Nxn шатрын самбарт n-ийн утгыг өгөгдсөн бол 1=<a,b=<n байх (a,b) хос бүрийн хувьд дараах асуултад хариулна уу.
+
+KnightL(a,b) байрлалаас (0,0) байрлал руу орохын тулд хамгийн бага хэдэн нүүдэл хийх шаардлагатай вэ? 
+(n-1, n-1)? Хэрэв хүлэг баатар хүрэх газар хүрэх боломжгүй бол хариулт нь оронд нь -1 байна.
+Дараа нь KnightL(a,b) бүрийн хариултыг доор заасан Гаралтын форматын дагуу хэвлэнэ үү.
+
+Оролтын формат
+
+Нэг бүхэл тоо.
+
+Хязгаарлалт
+5=<n=<25
