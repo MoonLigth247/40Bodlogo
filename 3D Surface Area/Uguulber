@@ -1,0 +1,37 @@
+Англи :
+
+Madison is a little girl who is fond of toys. Her friend Mason works in a toy manufacturing factory . 
+Mason has a 2D board A of size HxW with H rows and W columns. The board is divided into 
+cells of size 1x1 with each cell indicated by its coordinate (i,j). 
+The cell (i,j) has an integer Aij written on it. To create the toy Mason stacks Aij number of cubes of size 1x1x1 on the cell (i,j).
+
+Given the description of the board showing the values of  and that the price of the toy is equal to the 3d surface area find the price of the toy.
+
+Input Format
+
+The first line contains two space-separated integers  and  the height and the width of the board respectively.
+
+The next  lines contains  space separated integers. The  integer in  line denotes .
+
+Constraints
+1=<H,W=<100
+1=<Aij=<100
+
+Монгол :
+
+Мэдисон бол тоглоомонд дуртай бяцхан охин юм. Түүний найз Мейсон тоглоомын үйлдвэрт ажилладаг. 
+Мейсон нь H мөр, W багана бүхий HxW хэмжээтэй 2D самбартай А. Удирдах зөвлөл нь хуваагдана 
+1х1 хэмжээтэй нүд тус бүрийг координатаар нь (i,j) заана. 
+(i,j) нүдэнд Aij бүхэл тоо бичигдсэн байна. Тоглоом үүсгэхийн тулд Мейсон нүдэн дээр (i,j) 1x1x1 хэмжээтэй Aij тооны шоо овоолно.
+
+Тоглоомын үнэ нь 3d гадаргуугийн талбайтай тэнцэх утгыг харуулсан самбарын тайлбарыг өгснөөр тоглоомын үнийг ол.
+
+Оролтын формат
+
+Эхний мөрөнд зайгаар тусгаарлагдсан хоёр бүхэл тоо, самбарын өндөр, өргөнийг тус тус агуулна.
+
+Дараагийн мөрүүд нь зайгаар тусгаарлагдсан бүхэл тоонуудыг агуулна. Мөр дэх бүхэл тоо нь .
+
+Хязгаарлалт
+1=<H,W=<100
+1=<Aij=<100
