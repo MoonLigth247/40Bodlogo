@@ -1,0 +1,73 @@
+Англи :
+Consider a matrix where each cell contains either a 0 or a 1. Any cell containing a 1 is called a filled cell. 
+Two cells are said to be connected if they are adjacent to each other horizontally, vertically, or diagonally. 
+In the following grid, all cells marked X are connected to the cell marked Y.
+
+XXX
+XYX  
+XXX    
+If one or more filled cells are also connected, they form a region. Note that each cell in a region is 
+connected to zero or more cells in the region but is not necessarily directly connected to all the other cells in the region.
+
+Given an nxm matrix, find and print the number of cells in the largest region in the matrix. Note that there may be more than one region in the matrix.
+
+For example, there are two regions in the following 3x3 matrix. The larger region at the top 
+left contains 3 cells. The smaller one at the bottom right contains 1.
+
+110
+100
+001
+Function Description
+
+Complete the connectedCell function in the editor below.
+
+connectedCell has the following parameter(s):
+- int matrix[n][m]: matrix[i] represents the i row of the matrix
+
+Returns
+- int: the area of the largest region
+
+Input Format
+
+The first line contains an integer , the number of rows in the matrix.
+The second line contains an integer , the number of columns in the matrix.
+Each of the next  lines contains  space-separated integers .
+
+Constraints
+0 < n,b < 10
+Монгол :
+Нүд бүр 0 эсвэл 1-ийн аль нэгийг агуулсан матрицыг авч үзье. 1-тэй нүдийг дүүргэсэн нүд гэж нэрлэдэг. 
+Хоёр нүд нь хэвтээ, босоо, диагональ зэрэгтэй зэрэгцэн оршдог бол холбогдсон гэж нэрлэдэг. 
+Дараах сүлжээнд X тэмдэглэгдсэн бүх нүднүүд Y тэмдэглэгдсэн нүдтэй холбогдсон байна.
+
+XXX
+XYX  
+XXX    
+Хэрэв нэг буюу хэд хэдэн дүүрсэн нүд холбогдсон бол тэдгээр нь бүсийг үүсгэдэг. Тухайн бүс дэх нүд бүр байна гэдгийг анхаарна уу 
+бүс дэх тэг буюу түүнээс дээш нүдтэй холбогдсон боловч тухайн бүсийн бусад бүх нүдтэй шууд холбогдох албагүй.
+
+nxm матриц өгөгдсөн бол матрицын хамгийн том муж дахь нүдний тоог олж хэвлэнэ үү. Матрицад нэгээс олон бүс байж болохыг анхаарна уу.
+
+Жишээлбэл, дараах 3х3 матрицад хоёр муж байна. Дээд талд байгаа том бүс 
+зүүн талд 3 нүд байна. Баруун доод талд байгаа жижиг нь 1-г агуулна.
+
+110
+100
+001
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн connectCell функцийг гүйцээнэ үү.
+
+connectCell нь дараах параметртэй байна:
+- int матриц[n][m]: матриц[i] нь матрицын i мөрийг илэрхийлнэ.
+
+Буцах
+- int: хамгийн том бүс нутгийн талбай
+
+Оролтын формат
+
+Эхний мөрөнд бүхэл тоо, матриц дахь мөрийн тоог агуулна.
+Хоёр дахь мөрөнд матриц дахь баганын тоо бүхий бүхэл тоо байна.
+Дараагийн мөр бүр нь зайгаар тусгаарлагдсан бүхэл тоонуудыг агуулна.
+Хяазгаар
+0 < n,b < 10
