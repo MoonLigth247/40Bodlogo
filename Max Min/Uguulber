@@ -1,0 +1,78 @@
+Англи :
+You will be given a list of integers,arr , and a single integer k.
+You must create an array of length k from elements of arr such that its 
+unfairness is minimized. Call that array arr'. Unfairness of an array is calculated as
+                              max(arr')-min(arr')
+Where:
+- max denotes the largest integer in arr'
+- min denotes the smallest integer in arr'
+
+Example
+
+arr = [1,4,7,2]
+k = 2
+Pick any two elements, say arr' = [4,7].
+unfairness = max(4,7)-min(4,7)=7-4=3
+Testing for all pairs, the solution [1,2] provides the minimum unfairness.
+
+Note: Integers in arr may not be unique.
+
+Function Description
+
+Complete the maxMin function in the editor below.
+maxMin has the following parameter(s):
+
+int k: the number of elements to select
+int arr[n]:: an array of integers
+Returns
+
+int: the minimum possible unfairness
+Input Format
+
+The first line contains an integer , the number of elements in array arr.
+The second line contains an integer k.
+Each of the next  lines contains an integer arrp[i] where 0=<i=<n.
+
+Constraints
+2=<n=<pow(10,5)
+2=<k=<n
+0=<arr[i]=<pow(10,9)
+Монгол :
+Танд бүхэл тоо, arr болон нэг бүхэл тоон k-н жагсаалтыг өгөх болно.
+Та arr-ын элементүүдээс k урттай массив үүсгэх ёстой 
+шударга бус байдлыг багасгасан. Тэр массивыг arr' гэж нэрлэнэ үү. Массивын шударга бус байдлыг дараах байдлаар тооцно
+                              max(arr')-min(arr')
+Хаана:
+- max нь arr дахь хамгийн том бүхэл тоог илэрхийлнэ.
+- min нь arr дахь хамгийн жижиг бүхэл тоог илэрхийлнэ.
+
+Жишээ
+
+arr = [1,4,7,2]
+k = 2
+Дурын хоёр элементийг сонго, arr' = [4,7] гэж хэл.
+шударга бус байдал = max(4,7)-min(4,7)=7-4=3
+Бүх хосуудад туршилт хийхдээ [1,2] шийдэл нь хамгийн бага шударга бус байдлыг хангадаг.
+
+Тайлбар: arr дахь бүхэл тоо нь өвөрмөц биш байж болно.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн maxMin функцийг гүйцээнэ үү.
+maxMin дараах параметртэй байна:
+
+int k: сонгох элементийн тоо
+int arr[n]:: бүхэл тоонуудын массив
+Буцах
+
+int: хамгийн бага боломжит шударга бус байдал
+Оролтын формат
+
+Эхний мөрөнд arr массив дахь элементүүдийн тоо бүхий бүхэл тоо байна.
+Хоёр дахь мөрөнд бүхэл тоо k байна.
+Дараагийн мөр бүр 0=<i=<n байх arrp[i] бүхэл тоог агуулна.
+
+Хязгаарлалт
+2=<n=<pow(10,5)
+2=<k=<n
+0=<arr[i]=<pow(10,9)
