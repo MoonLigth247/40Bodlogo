@@ -1,0 +1,49 @@
+Англи:
+
+Lexicographical order is often known as alphabetical order when dealing with strings. A string is greater than another string if it comes later in a lexicographically sorted list.
+
+Given a word, create a new word by swapping some or all of its characters. This new word must meet two criteria:
+
+It must be greater than the original word
+It must be the smallest word that meets the first condition
+
+Example
+
+w = abcd
+
+The next largest word is abcd.
+
+Complete the function biggerIsGreater below to create and return the new string meeting the criteria. If it is not possible, return no answer.
+
+Function Description
+
+Complete the biggerIsGreater function in the editor below.
+
+biggerIsGreater has the following parameter(s):
+
+string w: a word
+
+Монгол:
+
+Тэмдэгт мөртэй харьцахдаа үг зүйн дарааллыг ихэвчлэн цагаан толгойн дараалал гэж нэрлэдэг. Хэрэв үг хэллэгээр эрэмбэлэгдсэн жагсаалтад дараа орж ирвэл тэмдэгт мөр нь өөр тэмдэгт мөрөөс их байна.
+
+Нэг үг өгөгдсөн бол зарим эсвэл бүх тэмдэгтийг нь сольж шинэ үг үүсгэ. Энэ шинэ үг нь хоёр шалгуурыг хангасан байх ёстой:
+
+Энэ нь анхны үгнээс илүү байх ёстой
+Энэ нь эхний нөхцөлийг хангасан хамгийн жижиг үг байх ёстой
+
+Жишээ
+
+w = abcd
+
+Дараагийн тэмдэгт мөр бол abcd.
+
+Доорх biggerIsGreater функцийг гүйцээж, шалгуурт нийцсэн шинэ мөр үүсгэж, буцаана уу. Хэрэв боломжгүй бол хариу өгөхгүй.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн biggerIsGreater функцийг гүйцээнэ үү.
+
+biggerIsGreater дараах параметртэй байна:
+
+w тэмдэгт мөр: үг
