@@ -1,0 +1,44 @@
+Англи :
+
+Given the time in numerals we may convert it into words, as shown below:
+
+    5:00 - five o'clock
+
+    5:01 - one minute past five
+
+At minuts = 0 , use o' clock. For 1<=minutes<=30 , use past, and for 30<minutes use to. Note the space between the apostrophe and clock in o' clock. Write a program which prints the time in words for the input given in the format described.
+
+Function Description
+
+Complete the timeInWords function in the editor below.
+
+timeInWords has the following parameter(s):
+
+int h: the hour of the day
+int m: the minutes after the hour
+Returns
+
+string: a time string as described
+
+Монгол :
+
+Цагийг тоогоор илэрхийлснээр бид үүнийг доор үзүүлсэн шиг үг болгон хувиргаж болно.
+
+    5:00 - таван цаг
+
+    5:01 - таваас нэг минут өнгөрсөн
+
+Минут = 0 үед цагийг ашиглана уу. 1<=минут<=30 , өнгөрсөн, 30<минутын хувьд to ашиглана. Апостроф болон цагийн хоорондох зайг тэмдэглэ. 
+Тодорхойлсон форматаар өгөгдсөн оролтын цагийг үгээр хэвлэх програм бич.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн timeInWords функцийг гүйцээнэ үү.
+
+timeInWords дараах параметртэй байна:
+
+int h: өдрийн цаг
+int m: цагийн дараах минут
+Буцах
+
+мөр: тайлбарласны дагуу цагийн мөр
