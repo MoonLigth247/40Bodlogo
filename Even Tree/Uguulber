@@ -1,0 +1,63 @@
+Англи :
+
+You are given a tree (a simple connected graph with no cycles).
+
+Find the maximum number of edges you can remove from the tree to get a forest 
+such that each connected component of the forest contains an even number of nodes.
+
+As an example, the following tree with 4 nodes can be cut at most 1 time to create an even forest.
+
+Function Description
+
+Complete the evenForest function in the editor below. It should return an integer as described.
+
+evenForest has the following parameter(s):
+
+t_nodes: the number of nodes in the tree
+t_edges: the number of undirected edges in the tree
+t_from: start nodes for each edge
+t_to: end nodes for each edge, (Match by index to t_from.)
+
+Input Format
+
+The first line of input contains two integers tn odes and te dges , the number of nodes and edges.
+The next te dges lines contain two integers tf rom[i] and tt o[i] which specify nodes 
+connected by an edge of the tree. The root of the tree is node .
+
+Constraints
+2=<n=<100
+n Е Z+even
+Note: The tree in the input will be such that it can always be decomposed into components 
+containing an even number of nodes.  is the set of positive even integers.
+
+Монгол :
+
+Танд мод (циклгүй энгийн холбогдсон график) өгсөн.
+
+Ой мод авахын тулд модноос гаргаж болох хамгийн их ирмэгийг олоорой 
+ойн холбогдсон бүрэлдэхүүн хэсэг бүр тэгш тооны зангилаа агуулсан байхаар.
+
+Жишээ нь дараах 4 зангилаатай модыг хамгийн ихдээ 1 удаа огтолж тэгш ой бий болгож болно.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн evenForest функцийг гүйцээнэ үү. Энэ нь тайлбарласны дагуу бүхэл тоог буцаах ёстой.
+
+evenForest нь дараах параметртэй байна:
+
+t_nodes: модны зангилааны тоо
+t_edges: модны чиглэлгүй ирмэгүүдийн тоо
+t_from: ирмэг бүрийн эхлэлийн зангилаа
+t_to: ирмэг тус бүрийн төгсгөлийн зангилаа, (t_from руу индексээр тааруулна.)
+
+Оролтын формат
+
+Оролтын эхний мөрөнд tn odes болон te dges гэсэн хоёр бүхэл тоо, зангилаа ба ирмэгийн тоо орно.
+Дараагийн мөрүүд нь зангилааг зааж өгөх tf rom[i] ба tt o[i] хоёр бүхэл тоог агуулна. 
+модны ирмэгээр холбогдсон. Модны үндэс нь зангилаа юм.
+
+Хязгаарлалт
+2=<n=<100
+n Е Z+тэгш
+Тайлбар: Оролтын мод нь үргэлж бүрэлдэхүүн хэсгүүдэд задарч болохуйц байх болно 
+тэгш тооны зангилаа агуулсан.  эерэг тэгш бүхэл тоонуудын олонлог юм.
