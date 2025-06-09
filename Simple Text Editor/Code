@@ -1,0 +1,42 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <stack>
+#include <string>
+using namespace std;
+
+int main() {
+    int Q;
+    cin >> Q;
+    string S;
+    stack<string> history;
+    history.push(S); // Initial empty state
+    
+    while (Q--) {
+        int t;
+        cin >> t;
+        
+        if (t == 1) {
+            string W;
+            cin >> W;
+            S += W;
+            history.push(S);
+        } else if (t == 2) {
+            int k;
+            cin >> k;
+            S = S.substr(0, S.length() - k);
+            history.push(S);
+        } else if (t == 3) {
+            int k;
+            cin >> k;
+            cout << S[k - 1] << endl;
+        } else if (t == 4) {
+            history.pop();
+            S = history.top();
+        }
+    }
+    
+    return 0;
+}
