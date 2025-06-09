@@ -15,3 +15,4 @@
 Жич: Хоосон дэд массив/дэд хэсгийг оруулахгүй.
 
 ![image](https://github.com/user-attachments/assets/0e7c8731-50bd-42ce-9e64-b1eb4bcfdf08)
+https://www.hackerrank.com/challenges/maxsubarray/problem
