@@ -1,0 +1,91 @@
+Англи :
+Given an array of strings of digits, try to find the occurrence of a given pattern of digits. 
+In the grid and pattern arrays, each string represents a row in the grid. For example, consider the following grid:
+
+1234567890  
+0987654321  
+1111111111  
+1111111111  
+2222222222  
+The pattern array is:
+
+876543  
+111111  
+111111
+The pattern begins at the second row and the third column of the grid and continues in the following two rows.
+The pattern is said to be present in the grid. The return value should be YES or NO, depending on whether the pattern is found. In this case, return YES.
+
+Function Description
+
+Complete the gridSearch function in the editor below. It should return YES if the pattern exists in the grid, or NO otherwise.
+
+gridSearch has the following parameter(s):
+
+string G[R]: the grid to search
+string P[r]: the pattern to search for
+
+Input Format
+
+The first line contains an integer э, the number of test cases.
+
+Each of the  test cases is represented as follows:
+The first line contains two space-separated integers R and C, the number of rows in the search grid G and the length of each row string.
+This is followed by R lines, each with a string of C digits that represent the grid G.
+The following line contains two space-separated integers, r and c, the number of rows in the pattern grid P and the length of each pattern row string.
+This is followed by r lines, each with a string of c digits that represent the pattern grid P.
+
+Returns
+
+string: either YES or NO
+
+Constraints
+1=<t=<5
+1=<R,r,C,c=<1000
+1=<r=<R
+1=<c=<C
+Монгол :
+
+Цифрүүдийн эгнээний массив өгөгдсөн бол өгөгдсөн цифрүүдийн хэв маягийн илрэлийг олохыг хичээ. 
+Сүлжээ болон хэв маягийн массив дахь мөр бүр нь сүлжээн дэх мөрийг төлөөлдөг. Жишээлбэл, дараах сүлжээг авч үзье.
+
+1234567890  
+0987654321  
+1111111111  
+1111111111  
+222222222  
+Загварын массив нь:
+
+876543  
+111111  
+111111
+Загвар нь торны хоёр дахь эгнээ, гурав дахь баганаас эхэлж, дараагийн хоёр мөрөнд үргэлжилнэ.
+Загвар нь сүлжээнд байгаа гэж хэлдэг. Загвар олдсон эсэхээс хамааран буцах утга нь YES эсвэл ҮГҮЙ байх ёстой. Энэ тохиолдолд YES гэж буцаана.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн gridSearch функцийг гүйцээнэ үү. Хэрэв хээ нь сүлжээнд байгаа бол YES, эс бөгөөс ҮГҮЙ гэж буцаана.
+
+gridSearch нь дараах параметртэй байна:
+
+G[R] мөр: хайх сүлжээ
+string P[r]: хайх загвар
+
+Оролтын формат
+
+Эхний мөрөнд туршилтын тохиолдлын тоо э бүхэл тоо байна.
+
+Туршилтын тохиолдол бүрийг дараах байдлаар илэрхийлнэ.
+Эхний мөрөнд R ба C зайгаар тусгаарлагдсан хоёр бүхэл тоо, хайлтын сүлжээний G мөрийн тоо болон мөр бүрийн уртыг агуулна.
+Үүний араас R шугамууд тус бүр нь G сүлжээг илэрхийлэх C цифрүүдийн мөртэй.
+Дараах мөрөнд хоосон зайгаар тусгаарлагдсан r ба c гэсэн хоёр бүхэл тоо, хээ P сүлжээний мөрүүдийн тоо болон хээ бүрийн мөрийн уртыг агуулна.
+Үүний араас r мөрүүд тус бүр нь P загварын сүлжээг төлөөлөх c цифрүүдийн мөртэй.
+
+Буцах
+
+мөр: YES эсвэл ҮГҮЙ
+
+Хязгаарлалт
+1=<t=<5
+1=<R,r,C,c=<1000
+1=<r=<R
+1=<c=<C
