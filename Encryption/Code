@@ -1,0 +1,65 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string encryption(string s) {
+    string processed;
+    // Remove all spaces from the string
+    for (char c : s) {
+        if (c != ' ') {
+            processed += c;
+        }
+    }
+    
+    int L = processed.length();
+    int r = floor(sqrt(L));
+    int c = ceil(sqrt(L));
+    
+    if (r * c < L) {
+        r++;
+    }
+    
+    if (r > c) {
+        c = r;
+    }
+    
+    vector<string> grid;
+    for (int i = 0; i < r; ++i) {
+        int start = i * c;
+        int end = start + c;
+        if (end > L) {
+            end = L;
+        }
+        grid.push_back(processed.substr(start, end - start));
+    }
+    
+    string result;
+    for (int j = 0; j < c; ++j) {
+        for (int i = 0; i < r; ++i) {
+            if (j < grid[i].length()) {
+                result += grid[i][j];
+            }
+        }
+        if (j != c - 1) {
+            result += " ";
+        }
+    }
+    
+    return result;
+}
+
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    string s;
+    getline(cin, s);
+
+    string result = encryption(s);
+
+    fout << result << "\n";
+
+    fout.close();
+
+    return 0;
+}
