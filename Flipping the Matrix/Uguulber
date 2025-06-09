@@ -1,0 +1,93 @@
+Англи :
+
+Sean invented a game involving a 2n*2n matrix where each cell of the matrix contains an integer.
+He can reverse any of its rows or columns any number of times. The goal of the game is to
+maximize the sum of the elements in the n*n submatrix located in the upper-left quadrant of the matrix.
+
+Given the initial configurations for g matrices, help Sean reverse the rows and columns of each 
+matrix in the best possible way so that the sum of the elements in the matrix's upper-left quadrant is maximal.
+
+Example
+matrix = [[1,2],[3,4]]
+1 2
+3 4
+It is 2x2 and we want to maximize the top left quadrant, a 1x1 matrix. Reverse row 1:
+
+1 2
+4 3
+And now reverse column 0:
+
+4 2
+1 3
+The maximal sum is 4.
+
+Function Description
+
+Complete the flippingMatrix function in the editor below.
+
+flippingMatrix has the following parameters:
+- int matrix[2n][2n]: a 2-dimensional array of integers
+
+Returns
+- int: the maximum sum possible.
+
+Input Format
+
+The first line contains an integer q, the number of queries.
+
+The next q sets of lines are in the following format:
+
+The first line of each query contains an integer,n .
+Each of the next 2n lines contains 2n space-separated integers matrix[i][j] in row i of the matrix.
+
+Constraints
+1=<q=<16
+1=<n=<128
+0=<matrix[i][j]=<4096, where 0=<i,j<2n.
+
+Монгол :
+
+Шон матрицын нүд бүр бүхэл тоо агуулсан 2n*2n матрицтай тоглоом зохион бүтээжээ.
+Тэрээр түүний аль нэг мөр, баганыг хэдэн ч удаа эргүүлж чадна. Тоглоомын зорилго нь
+матрицын зүүн дээд квадратад байрлах n*n дэд матрицын элементүүдийн нийлбэрийг дээд зэргээр нэмэгдүүлэх.
+
+g матрицын анхны тохиргоог өгөгдсөн бол Шонд тус бүрийн мөр, баганыг эргүүлэхэд тусална уу 
+матрицын зүүн дээд квадрат дахь элементүүдийн нийлбэр хамгийн их байхаар матрицыг хамгийн сайн аргаар тохируулна.
+
+Жишээ
+матриц = [[1,2],[3,4]]
+1 2
+3 4
+Энэ нь 2x2 бөгөөд бид 1x1 матриц болох зүүн дээд квадратыг нэмэгдүүлэхийг хүсч байна. Урвуу эгнээ 1:
+
+1 2
+4 3
+Одоо 0 багана руу урвуу:
+
+4 2
+1 3
+Хамгийн их нийлбэр нь 4 байна.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн flippingMatrix функцийг гүйцээнэ үү.
+
+flippingMatrix нь дараах параметрүүдийг агуулна.
+- int матриц[2n][2n]: бүхэл тоонуудын 2 хэмжээст массив
+
+Буцах
+- int: боломжтой хамгийн их нийлбэр.
+
+Оролтын формат
+
+Эхний мөрөнд асуулгын тоо болох q бүхэл тоо байна.
+
+Дараагийн q шугамууд дараах форматтай байна.
+
+Асуулга бүрийн эхний мөрөнд бүхэл тоо n байна.
+Дараагийн 2n мөр бүр нь матрицын i мөрөнд зайгаар тусгаарлагдсан 2n бүхэл тооны матриц[i][j]-г агуулна.
+
+Хязгаарлалт
+1=<q=<16
+1=<n=<128
+0=<matrix[i][j]=<4096, where 0=<i,j<2n.
