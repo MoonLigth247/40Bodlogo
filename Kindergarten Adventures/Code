@@ -1,0 +1,134 @@
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <algorithm>
+#include <fstream> 
+using namespace std;
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
+int solve(vector<int> t) {
+    int n = t.size();
+    if (n == 0) {
+        return 1; // According to constraints, n is at least 1.
+    }
+
+    vector<long long> diff(n + 1, 0);
+
+    for (int i = 0; i < n; ++i) {
+        long long time_needed = t[i];
+        
+        if (time_needed == 0) {
+            continue;
+        }
+
+        long long start_fail = (i - time_needed + 1 + n) % n;
+        long long end_fail = i;
+
+        if (start_fail <= end_fail) {
+            diff[start_fail]++;
+            if (end_fail + 1 < n + 1) {
+                diff[end_fail + 1]--;
+            }
+        } else {
+            
+            diff[0]++;
+            if (end_fail + 1 < n + 1) {
+                diff[end_fail + 1]--;
+            }
+            
+            // Increment for the range [start_fail, n-1]
+            diff[start_fail]++;
+        }
+    }
+    long long min_failures = n + 1;
+    int best_id = 0;
+    long long current_failures = 0;
+
+    for (int k = 0; k < n; ++k) {
+        current_failures += diff[k];
+        if (current_failures < min_failures) {
+            min_failures = current_failures;
+            // The problem asks for a 1-indexed student ID.
+            best_id = k + 1;
+        }
+    }
+
+    return best_id;
+}
+
+int main()
+{
+    ofstream fout;
+    if (getenv("OUTPUT_PATH")) {
+        fout.open(getenv("OUTPUT_PATH"));
+    }
+
+    string t_count_temp;
+    getline(cin, t_count_temp);
+
+    int t_count = stoi(ltrim(rtrim(t_count_temp)));
+
+    string t_temp_temp;
+    getline(cin, t_temp_temp);
+
+    vector<string> t_temp = split(rtrim(t_temp_temp));
+
+    vector<int> t(t_count);
+
+    for (int i = 0; i < t_count; i++) {
+        int t_item = stoi(t_temp[i]);
+
+        t[i] = t_item;
+    }
+
+    int id = solve(t);
+
+    (getenv("OUTPUT_PATH") ? fout : cout) << id << "\n";
+
+    if(fout.is_open()) {
+        fout.close();
+    }
+
+    return 0;
+}
+
+string ltrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
+
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
+}
+
+vector<string> split(const string &str) {
+    vector<string> tokens;
+
+    string::size_type start = 0;
+    string::size_type end = 0;
+
+    while ((end = str.find(" ", start)) != string::npos) {
+        tokens.push_back(str.substr(start, end - start));
+
+        start = end + 1;
+    }
+
+    tokens.push_back(str.substr(start));
+
+    return tokens;
+}
