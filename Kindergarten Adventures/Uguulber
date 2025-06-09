@@ -1,0 +1,63 @@
+Англи :
+
+Meera teaches a class of n students, and every day in her classroom is an adventure. Today is drawing day!
+
+The students are sitting around a round table, and they are numbered from 1 to n in the clockwise direction. 
+This means that the students are numbered 1,2,3,..,n-1,n and students 1 and n are sitting next to each other.
+
+After letting the students draw for a certain period of time, Meera starts collecting their work 
+to ensure she has time to review all the drawings before the end of the day. However, some of her 
+students aren't finished drawing! Each student  needs ti extra minutes to complete their drawing.
+
+Meera collects the drawings sequentially in the clockwise direction, starting with student ID x, 
+and it takes her exactly  minute to review each drawing. This means that student x gets 0 
+extra minutes to complete their drawing, student x+1 gets 1 extra minute, student x+2 gets 2 extra minutes, 
+and so on. Note that Meera will still spend 1 minute for each student even if the drawing isn't ready.
+
+Given the values of t1,t2,...,tn help Meera choose the best possible x to start collecting drawings from, 
+such that the number of students able to complete their drawings is maximal. 
+Then print x on a new line. If there are multiple such IDs, select the smallest one.
+
+Input Format
+
+The first line contains a single positive integer,n , denoting the number of students in the class.
+The second line contains n space-separated integers describing the respective
+amounts of time that each student needs to finish their drawings (i.e.,t1,t2,...,tn ).
+
+Constraints
+1=<n=<pow(10,5)
+0=<ti=<n
+Subtasks
+1<n=<pow(10,4) for 30% of the maximum score.
+
+Монгол :
+
+Мира n сурагчтай ангид хичээл заадаг бөгөөд түүний ангид өдөр бүр адал явдалтай байдаг. Өнөөдөр зурах өдөр!
+
+Оюутнууд дугуй ширээний ард сууж, цагийн зүүний дагуу 1-ээс n хүртэл дугаарласан байна. 
+Энэ нь сурагчдыг 1,2,3,..,n-1,n гэсэн тоогоор дугаарлаж, 1, n-ийн сурагчид зэрэгцэн сууж байна гэсэн үг.
+
+Оюутнуудад тодорхой хугацаанд зураг зурахыг зөвшөөрсний дараа Мера тэдний ажлыг цуглуулж эхэлдэг 
+Тэр өдрийн төгсгөлөөс өмнө бүх зургийг шалгаж үзэх цагтай байх ёстой. Гэсэн хэдий ч түүний зарим нь 
+оюутнууд зурж дуусаагүй байна! Сурагч бүр зургаа дуусгахад нэмэлт минут шаардагдана.
+
+Meera зурсан зургуудыг оюутны ID x-ээс эхлэн цагийн зүүний дагуу дараалан цуглуулдаг. 
+Тэр зураг бүрийг шалгахад яг минут зарцуулдаг. Энэ нь сурагч x 0 авдаг гэсэн үг 
+Зургаа дуусгахад нэмэлт минут, х+1 оюутан 1 минут, х+2 оюутан 2 минут, 
+гэх мэт. Зураг бэлэн болоогүй байсан ч Meera сурагч бүрт 1 минут зарцуулах болно гэдгийг анхаарна уу.
+
+t1,t2,...,tn утгуудыг өгөгдсөн бол Меерад зураг цуглуулж эхлэхэд хамгийн сайн x-г сонгоход тусална. 
+Ингэснээр зураг зурах боломжтой сурагчдын тоо хамгийн их байна. 
+Дараа нь x-г шинэ мөрөнд хэвлэ. Хэрэв ийм олон ID байгаа бол хамгийн жижигийг нь сонгоно уу.
+
+Оролтын формат
+
+Эхний мөрөнд ангийн сурагчдын тоог илэрхийлсэн нэг эерэг бүхэл тоо, n байна.
+Хоёрдахь мөрөнд тус тусыг дүрсэлсэн зайгаар тусгаарлагдсан n бүхэл тоо байна
+Суралцагч бүр зургаа дуусгахад шаардагдах хугацаа (жишээ нь, t1, t2,..., tn ).
+
+Хязгаарлалт
+1=<n=<pow(10,5)
+0=<ti=<n
+Дэд даалгавар
+1<n=<pow(10,4) онооны дээд онооны 30%-д.
