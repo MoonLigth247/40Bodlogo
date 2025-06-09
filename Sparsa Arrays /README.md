@@ -34,3 +34,4 @@ int[q]: Хайлт тус бүрийн үр дүнг агуулсан масси
 1≤n≤1000
 1≤q≤1000
 1≤∣stringList[i]∣,∣queries[i]∣≤20 (Тэмдэгт мөрүүдийн урт 1-ээс 20 байна)
+![40 35](https://github.com/user-attachments/assets/1da6dfe8-b37a-4020-ad98-658843490561)
