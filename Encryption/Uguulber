@@ -1,0 +1,87 @@
+Англи :
+An English text needs to be encrypted using the following encryption scheme.
+First, the spaces are removed from the text. Let L be the length of this text.
+Then, characters are written into a grid, whose rows and columns have the following constraints:
+
+Example
+[pow(L,1/2)]=<row=<column=<[pow(L,1/2)],where [x] is floor function and [x] is ceil function
+
+After removing spaces, the string is 54 characters long. pow(54,1/2) is between 7 and 8, so it is written in the form of a grid with 7 rows and 8 columns.
+
+ifmanwas  
+meanttos          
+tayonthe  
+groundgo  
+dwouldha  
+vegivenu  
+sroots
+
+Ensure that rows=<columns=>L
+If multiple grids satisfy the above conditions, choose the one with the minimum area, i.e. . rows*columns.
+The encoded message is obtained by displaying the characters of each column, with a space between column texts. The encoded message for the grid above is:
+
+imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+
+Create a function to encode a message.
+
+Function Description
+
+Complete the encryption function in the editor below.
+
+encryption has the following parameter(s):
+
+string s: a string to encrypt
+Returns
+
+string: the encrypted string
+Input Format
+
+One line of text, the string 
+
+Constraints
+1=< lenght of s=<81
+s contains characters in the range ascii[a-z] and space, ascii(32).
+
+Монгол :
+Англи хэл дээрх текстийг дараах шифрлэлтийн схемийг ашиглан шифрлэх шаардлагатай.
+Эхлээд текстээс хоосон зайг арилгана. Энэ текстийн уртыг L гэж үзье.
+Дараа нь мөр, багана нь дараах хязгаарлалттай тэмдэгтүүдийг сүлжээнд бичнэ.
+
+Жишээ
+[pow(L,1/2)]=<row=<column=<[pow(L,1/2)], энд [x] нь шалны функц, [x] нь таазны функц юм
+
+Хоосон зайг арилгасны дараа мөр нь 54 тэмдэгтийн урттай байна. pow(54,1/2) нь 7-8 хооронд байх тул 7 мөр, 8 багана бүхий тор хэлбэрээр бичнэ.
+
+ifmanwas  
+meanttos          
+tayonthe  
+groundgo  
+dwouldha  
+vegivenu  
+sroots
+
+rows=<columns=>L байгаа эсэхийг шалгаарай
+Хэрэв олон сүлжээ нь дээрх нөхцлийг хангаж байвал хамгийн бага талбайтай нэгийг сонгоно уу, жишээлбэл. мөр* багана.
+Шифрлэгдсэн мессежийг багана бүрийн тэмдэгтүүдийг баганын текстийн хооронд зайтай харуулах замаар олж авдаг. Дээрх сүлжээний кодлогдсон мессеж нь:
+
+imtgdvs айдастай майогоо anouuio ntnnlvt wttddes aohghn sseoau
+
+Мессежийг кодлох функцийг үүсгэ.
+
+Функцийн тодорхойлолт
+
+Доорх засварлагчийн шифрлэлтийн функцийг гүйцээнэ үү.
+
+Шифрлэлт нь дараах параметртэй байна:
+
+string s: шифрлэх мөр
+Буцах
+
+мөр: шифрлэгдсэн мөр
+Оролтын формат
+
+Текстийн нэг мөр, мөр 
+
+Хязгаарлалт
+1=< s-ийн урт=<81
+s нь ascii[a-z] болон зай, ascii(32) муж дахь тэмдэгтүүдийг агуулна.
