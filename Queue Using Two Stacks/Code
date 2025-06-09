@@ -1,0 +1,59 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+class Queue {
+private:
+    stack<int> stackEnqueue;
+    stack<int> stackDequeue;
+
+    void transferIfNeeded() {
+        if (stackDequeue.empty()) {
+            while (!stackEnqueue.empty()) {
+                stackDequeue.push(stackEnqueue.top());
+                stackEnqueue.pop();
+            }
+        }
+    }
+
+public:
+    void enqueue(int x) {
+        stackEnqueue.push(x);
+    }
+
+    void dequeue() {
+        transferIfNeeded();
+        if (!stackDequeue.empty()) {
+            stackDequeue.pop();
+        }
+    }
+
+    int front() {
+        transferIfNeeded();
+        return stackDequeue.top();
+    }
+};
+
+int main() {
+    Queue q;
+    int queries;
+    cin >> queries;
+
+    for (int i = 0; i < queries; ++i) {
+        int type;
+        cin >> type;
+
+        if (type == 1) {
+            int x;
+            cin >> x;
+            q.enqueue(x);
+        } else if (type == 2) {
+            q.dequeue();
+        } else if (type == 3) {
+            cout << q.front() << endl;
+        }
+    }
+
+    return 0;
+}
+
