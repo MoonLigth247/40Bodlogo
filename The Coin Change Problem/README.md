@@ -10,3 +10,4 @@
 
 Гаралт n-ийг гаргах боломжит аргын тоо.
 ![image](https://github.com/user-attachments/assets/15917877-c769-4368-a619-0bca5e40b416)
+https://www.hackerrank.com/challenges/coin-change/problem
