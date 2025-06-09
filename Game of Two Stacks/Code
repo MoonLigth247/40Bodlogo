@@ -1,0 +1,62 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int twoStacks(int maxSum, vector<int>& a, vector<int>& b) {
+    vector<long long> prefixA(a.size() + 1, 0);
+    vector<long long> prefixB(b.size() + 1, 0);
+    
+    for (int i = 0; i < a.size(); i++) {
+        prefixA[i + 1] = prefixA[i] + a[i];
+    }
+    
+    for (int i = 0; i < b.size(); i++) {
+        prefixB[i + 1] = prefixB[i] + b[i];
+    }
+    
+    int maxCount = 0;
+    int j = b.size();
+    
+    for (int i = 0; i <= a.size(); i++) {
+        if (prefixA[i] > maxSum) {
+            break;
+        }
+        
+        while (j > 0 && prefixA[i] + prefixB[j] > maxSum) {
+            j--;
+        }
+        
+        if (prefixA[i] + prefixB[j] <= maxSum) {
+            maxCount = max(maxCount, i + j);
+        }
+    }
+    
+    return maxCount;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int g;
+    cin >> g;
+
+    while (g--) {
+        int n, m, maxSum;
+        cin >> n >> m >> maxSum;
+
+        vector<int> a(n);
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+
+        vector<int> b(m);
+        for (int i = 0; i < m; i++) {
+            cin >> b[i];
+        }
+
+        int result = twoStacks(maxSum, a, b);
+        cout << result << '\n';
+    }
+
+    return 0;
+}
